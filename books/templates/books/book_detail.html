@@ -9,6 +9,7 @@
     <p>{{ book.description }}</p>
     <p>{{ book.author }}</p>
     <h4>{{ book.price }}</h4>
-
+    <br>
+    <a href="{% url 'book_update' book.id %}"><button class="btn btn-info" type="submit">ویرایش</button></a>
     <a href="{% url 'book_list' %}"><button class="btn btn-success" type="submit">بازگشت</button></a>
 {% endblock content %}

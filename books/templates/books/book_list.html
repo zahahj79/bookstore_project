@@ -12,5 +12,6 @@
          <a href="{{ book.get_absolute_url }}"><button class="btn btn-success" type="submit">More...</button></a>
          <br>
      {% endfor %}
+    <a href="{% url 'book_create' %}">اضافه کردن کتاب جدید</a>
 
 {% endblock content %}
